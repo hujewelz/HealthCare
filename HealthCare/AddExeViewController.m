@@ -87,7 +87,7 @@
     NSDictionary *dict = [itemArray objectAtIndex:indexPath.row];
     
     if (indexPath.row == 1) {
-        UIViewController *addMuscleViewController = [[AddMuscleViewController alloc] init];
+        UIViewController *addMuscleViewController = [[UINavigationController alloc] initWithRootViewController:[[AddMuscleViewController alloc] init]];
         
         addMuscleViewController.title = [dict objectForKey:@"title"];
         

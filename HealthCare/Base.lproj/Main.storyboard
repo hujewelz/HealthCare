@@ -572,11 +572,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lrr-Gv-pgD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2728" y="-1363"/>
+            <point key="canvasLocation" x="2676" y="-1358"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="UFJ-aI-mQd">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oAs-aQ-koX" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController storyboardIdentifier="AddClock" automaticallyAdjustsScrollViewInsets="NO" id="Ro2-ad-wgq" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="BD1-2e-grv">
@@ -589,7 +590,6 @@
                         <segue destination="sdk-Rn-szt" kind="relationship" relationship="rootViewController" id="ty8-9w-Ijm"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="oAs-aQ-koX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2296" y="-1363"/>
         </scene>
