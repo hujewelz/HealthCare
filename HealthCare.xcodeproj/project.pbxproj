@@ -23,7 +23,7 @@
 		3E00350119EA780F00BFA248 /* muscle_06_01@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E0034F319EA780F00BFA248 /* muscle_06_01@2x.png */; };
 		3E30680519E3558C005A810E /* FirstItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E30680419E3558C005A810E /* FirstItemViewController.m */; };
 		3E30680719E35887005A810E /* animation.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3E30680619E35887005A810E /* animation.plist */; };
-		3E30680919E36061005A810E /* FirstItemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E30680819E36061005A810E /* FirstItemViewController.xib */; };
+		3E30680919E36061005A810E /* MaskView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E30680819E36061005A810E /* MaskView.xib */; };
 		3E30680B19E3630F005A810E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E30680A19E3630F005A810E /* CoreLocation.framework */; };
 		3E30681119E37316005A810E /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E30681019E37316005A810E /* TabBarController.m */; };
 		3E30681419E37BFF005A810E /* AddExeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E30681319E37BFF005A810E /* AddExeViewController.m */; };
@@ -100,6 +100,7 @@
 		3EC7151719DBFAFB0073CACF /* Icon-spotlight.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EC7151619DBFAFB0073CACF /* Icon-spotlight.png */; };
 		3EC7151A19DBFC6E0073CACF /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EC7151919DBFC6E0073CACF /* SecondViewController.m */; };
 		3EC7151D19DBFC7B0073CACF /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EC7151C19DBFC7B0073CACF /* ThirdViewController.m */; };
+		514E96D41AC6A56000A9C7AF /* MaskView.m in Sources */ = {isa = PBXBuildFile; fileRef = 514E96D31AC6A56000A9C7AF /* MaskView.m */; };
 		51F814461AC62E21006FBADC /* TimeTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F814451AC62E21006FBADC /* TimeTool.m */; };
 		51F814491AC644CB006FBADC /* HistoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F814481AC644CB006FBADC /* HistoryCell.m */; };
 		51F8144C1AC64BC8006FBADC /* MyExerciseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F8144B1AC64BC8006FBADC /* MyExerciseCell.m */; };
@@ -138,7 +139,7 @@
 		3E30680319E3558C005A810E /* FirstItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstItemViewController.h; sourceTree = "<group>"; };
 		3E30680419E3558C005A810E /* FirstItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstItemViewController.m; sourceTree = "<group>"; };
 		3E30680619E35887005A810E /* animation.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = animation.plist; sourceTree = "<group>"; };
-		3E30680819E36061005A810E /* FirstItemViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstItemViewController.xib; sourceTree = "<group>"; };
+		3E30680819E36061005A810E /* MaskView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MaskView.xib; sourceTree = "<group>"; };
 		3E30680A19E3630F005A810E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		3E30680F19E37316005A810E /* TabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TabBarController.h; path = ../TabBarController.h; sourceTree = "<group>"; };
 		3E30681019E37316005A810E /* TabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TabBarController.m; path = ../TabBarController.m; sourceTree = "<group>"; };
@@ -233,6 +234,8 @@
 		3EC7151919DBFC6E0073CACF /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		3EC7151B19DBFC7B0073CACF /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
 		3EC7151C19DBFC7B0073CACF /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		514E96D21AC6A56000A9C7AF /* MaskView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaskView.h; sourceTree = "<group>"; };
+		514E96D31AC6A56000A9C7AF /* MaskView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaskView.m; sourceTree = "<group>"; };
 		51F814441AC62E21006FBADC /* TimeTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeTool.h; sourceTree = "<group>"; };
 		51F814451AC62E21006FBADC /* TimeTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeTool.m; sourceTree = "<group>"; };
 		51F814471AC644CB006FBADC /* HistoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryCell.h; sourceTree = "<group>"; };
@@ -280,7 +283,9 @@
 				3EC714F019DBF9ED0073CACF /* ViewController.m */,
 				3E30680319E3558C005A810E /* FirstItemViewController.h */,
 				3E30680419E3558C005A810E /* FirstItemViewController.m */,
-				3E30680819E36061005A810E /* FirstItemViewController.xib */,
+				3E30680819E36061005A810E /* MaskView.xib */,
+				514E96D21AC6A56000A9C7AF /* MaskView.h */,
+				514E96D31AC6A56000A9C7AF /* MaskView.m */,
 				3E79B42B19E3D0AA00C4EA61 /* SecondItemViewController.h */,
 				3E79B42C19E3D0AA00C4EA61 /* SecondItemViewController.m */,
 				3E99B9F619E55C4200515629 /* ThirdItemViewController.h */,
@@ -602,7 +607,7 @@
 				3E6D7E6E19E2B77C00E8F610 /* run_06.png in Resources */,
 				3E956C9219E4C1DD00631098 /* yoga@2x.png in Resources */,
 				3E956CA119E4C3E800631098 /* ring_03.png in Resources */,
-				3E30680919E36061005A810E /* FirstItemViewController.xib in Resources */,
+				3E30680919E36061005A810E /* MaskView.xib in Resources */,
 				3E956C8D19E4C1DD00631098 /* run.png in Resources */,
 				3E0034FB19EA780F00BFA248 /* muscle_03_01@2x.png in Resources */,
 				3E0034F719EA780F00BFA248 /* muscle_01_01@2x.png in Resources */,
@@ -694,6 +699,7 @@
 				3EC714E719DBF9ED0073CACF /* main.m in Sources */,
 				51F814461AC62E21006FBADC /* TimeTool.m in Sources */,
 				3E99B9EF19E5477B00515629 /* ShowMuscleExeViewController.m in Sources */,
+				514E96D41AC6A56000A9C7AF /* MaskView.m in Sources */,
 				3E6BC05919E682D800F572A6 /* DocumentTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

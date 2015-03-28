@@ -58,7 +58,7 @@
     NSDictionary *dict = [dataList objectAtIndex:indexPath.row];
     
     //设置row选中时的类型
-    //cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     cell.textLabel.text = [dict objectForKey:@"title"];
     cell.imageView.image = [UIImage imageNamed:[dict objectForKey:@"icon"]];

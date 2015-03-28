@@ -21,24 +21,6 @@
 
 @implementation SecondViewController
 
-//- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-//{
-//    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-//    if (self) {
-//        // Custom initialization
-//        
-//    }
-//    return self;
-//}
-
-//- (void)loadView {
-//    UIView *view = [[UIView alloc] initWithFrame:[UIScreen mainScreen ].bounds];
-//    self.view = view;
-//    _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) style:UITableViewStylePlain];
-//    [self.view addSubview:_tableView];
-//    self.hidesBottomBarWhenPushed = YES;
-//}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];

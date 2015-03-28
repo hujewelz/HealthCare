@@ -9,14 +9,16 @@
 #import "FirstItemViewController.h"
 #import "DocumentTool.h"
 #import "TimeTool.h"
+#import "MaskView.h"
 
-@interface FirstItemViewController () <CLLocationManagerDelegate>
+@interface FirstItemViewController () <CLLocationManagerDelegate, UITableViewDataSource, UITableViewDelegate>
 {
     NSMutableDictionary *dictionary;
     NSMutableArray *images;
     SystemSoundID sound;    //系统声音的Id 1000-2000
     NSDate *startTime;
     NSString *dateString;
+    MaskView *maskView;
     
 }
 @property (strong, nonatomic) CLLocationManager *locationManager;
@@ -55,6 +57,15 @@
     //获取系统声音路径
     NSURL *url = [NSURL URLWithString:@"/System/Library/Audio/UISounds/begin_video_record.caf"];
     AudioServicesCreateSystemSoundID((__bridge CFURLRef)(url), &sound);
+    
+    maskView = [MaskView nib];
+    [self.view addSubview:maskView];
+    
+    [self buttonFade];
+    [self.locationManager startUpdatingLocation];
+    self.tableView.allowsSelection = NO;
+    self.tableView.contentOffset = CGPointMake(0, 35);
+    self.tableView.contentInset = UIEdgeInsetsMake(-35, 0, 0, 0);
     
 }
 
@@ -155,8 +166,8 @@
 {
     [UIView animateWithDuration:1.0f animations:^{
         
-        self.button.alpha = 0;
-        self.alertlabel.alpha = 0;
+        //self.button.alpha = 0;
+        //self.alertlabel.alpha = 0;
         
     } completion:^(BOOL finished) {
         

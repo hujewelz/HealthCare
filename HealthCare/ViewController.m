@@ -30,6 +30,8 @@
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     
+    
+    
 }
 
 #pragma mark DataSource协议
@@ -63,8 +65,8 @@
     NSDictionary *dict = [itemArray objectAtIndex:indexPath.row];
     
     if (indexPath.row == 0) {
-        UIViewController *firstItemViewController = [[FirstItemViewController alloc] initWithNibName:@"FirstItemViewController" bundle:nil];
-        
+        UIViewController *firstItemViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"Run"];
+        firstItemViewController.hidesBottomBarWhenPushed = YES;
         firstItemViewController.title = [dict objectForKey:@"title"];
         
         [self.navigationController pushViewController:firstItemViewController animated:YES];

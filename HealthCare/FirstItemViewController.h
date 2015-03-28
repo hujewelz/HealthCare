@@ -11,7 +11,7 @@
 #import <AudioToolbox/AudioToolbox.h>
 
 
-@interface FirstItemViewController : UIViewController
+@interface FirstItemViewController : UITableViewController
 
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property (weak, nonatomic) IBOutlet UILabel *alertlabel;
@@ -24,5 +24,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *showDistance;
 @property (weak, nonatomic) IBOutlet UIImageView *ringIImageView;
 - (IBAction)buttonClick:(id)sender;
+
 
 @end
