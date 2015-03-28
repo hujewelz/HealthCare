@@ -9,9 +9,13 @@
 #import "HistoryCell.h"
 
 @implementation HistoryCell
++ (id)nib {
+    return [[[NSBundle mainBundle] loadNibNamed:@"HistoryCell" owner:nil options:nil] lastObject];
+}
 
 - (void)awakeFromNib {
     // Initialization code
+    NSLog(@"awakeFromNib");
     self.selectionStyle = UITableViewCellSelectionStyleNone;
 }
 

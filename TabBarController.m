@@ -7,6 +7,9 @@
 //
 
 #import "TabBarController.h"
+#import "ViewController.h"
+#import "SecondViewController.h"
+#import "ThirdViewController.h"
 
 @interface TabBarController ()
 
@@ -17,8 +20,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+    //ViewController = [];
     self.tabBar.tintColor = [UIColor redColor];
+    //self.viewControllers = @[];
     
 }
 

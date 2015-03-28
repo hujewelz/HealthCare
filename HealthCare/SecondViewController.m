@@ -9,6 +9,7 @@
 #import "SecondViewController.h"
 #import "DocumentTool.h"
 #import "HistoryCell.h"
+#define IDENTIFIER  @"Cell"
 
 @interface SecondViewController () <UITableViewDelegate, UITableViewDataSource>
 {
@@ -21,6 +22,14 @@
 
 @implementation SecondViewController
 
+//- (void)loadView {
+//    UIView *view = [[UIView alloc] initWithFrame:[UIScreen mainScreen ].bounds];
+//    self.view = view;
+//    _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) style:UITableViewStylePlain];
+//    [self.view addSubview:_tableView];
+//    
+//}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -30,6 +39,9 @@
     
     _tableView.delegate = self;
     _tableView.dataSource = self;
+    _tableView.tableFooterView  = [[UIView alloc] init];
+    _tableView.rowHeight = 50;
+    //[_tableView registerNib:[HistoryCell nib] forCellReuseIdentifier:IDENTIFIER];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -48,11 +60,9 @@
 
 - (UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *identifier = @"Cell";
-    HistoryCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
-//    if (!cell) {
-//        tableViewCell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:identifier];
-//    }
+    
+    HistoryCell *cell = [tableView dequeueReusableCellWithIdentifier:IDENTIFIER forIndexPath:indexPath];
+
     
    cell.data = historyData[indexPath.row];
     

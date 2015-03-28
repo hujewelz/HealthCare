@@ -101,7 +101,10 @@
 		3EC7151A19DBFC6E0073CACF /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EC7151919DBFC6E0073CACF /* SecondViewController.m */; };
 		3EC7151D19DBFC7B0073CACF /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EC7151C19DBFC7B0073CACF /* ThirdViewController.m */; };
 		514E96D41AC6A56000A9C7AF /* MaskView.m in Sources */ = {isa = PBXBuildFile; fileRef = 514E96D31AC6A56000A9C7AF /* MaskView.m */; };
-		51F814461AC62E21006FBADC /* TimeTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F814451AC62E21006FBADC /* TimeTool.m */; };
+		51D164991AC6CC7D0000EEA7 /* TimeTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 51D164981AC6CC7D0000EEA7 /* TimeTool.m */; };
+		51D1649C1AC6DC6A0000EEA7 /* CalorieBrain.m in Sources */ = {isa = PBXBuildFile; fileRef = 51D1649B1AC6DC6A0000EEA7 /* CalorieBrain.m */; };
+		51D1649E1AC6F9610000EEA7 /* HistoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51D1649D1AC6F9610000EEA7 /* HistoryCell.xib */; };
+		51F590721AC6B68600BFA6B4 /* FViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F590711AC6B68600BFA6B4 /* FViewController.m */; };
 		51F814491AC644CB006FBADC /* HistoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F814481AC644CB006FBADC /* HistoryCell.m */; };
 		51F8144C1AC64BC8006FBADC /* MyExerciseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F8144B1AC64BC8006FBADC /* MyExerciseCell.m */; };
 		51F8144E1AC66A9C006FBADC /* Images-2.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51F8144D1AC66A9C006FBADC /* Images-2.xcassets */; };
@@ -236,8 +239,13 @@
 		3EC7151C19DBFC7B0073CACF /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 		514E96D21AC6A56000A9C7AF /* MaskView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaskView.h; sourceTree = "<group>"; };
 		514E96D31AC6A56000A9C7AF /* MaskView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaskView.m; sourceTree = "<group>"; };
-		51F814441AC62E21006FBADC /* TimeTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeTool.h; sourceTree = "<group>"; };
-		51F814451AC62E21006FBADC /* TimeTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeTool.m; sourceTree = "<group>"; };
+		51D164971AC6CC7D0000EEA7 /* TimeTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeTool.h; sourceTree = "<group>"; };
+		51D164981AC6CC7D0000EEA7 /* TimeTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeTool.m; sourceTree = "<group>"; };
+		51D1649A1AC6DC6A0000EEA7 /* CalorieBrain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalorieBrain.h; sourceTree = "<group>"; };
+		51D1649B1AC6DC6A0000EEA7 /* CalorieBrain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalorieBrain.m; sourceTree = "<group>"; };
+		51D1649D1AC6F9610000EEA7 /* HistoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HistoryCell.xib; sourceTree = "<group>"; };
+		51F590701AC6B68600BFA6B4 /* FViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FViewController.h; sourceTree = "<group>"; };
+		51F590711AC6B68600BFA6B4 /* FViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FViewController.m; sourceTree = "<group>"; };
 		51F814471AC644CB006FBADC /* HistoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryCell.h; sourceTree = "<group>"; };
 		51F814481AC644CB006FBADC /* HistoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryCell.m; sourceTree = "<group>"; };
 		51F8144A1AC64BC8006FBADC /* MyExerciseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyExerciseCell.h; sourceTree = "<group>"; };
@@ -281,6 +289,8 @@
 			children = (
 				3EC714EF19DBF9ED0073CACF /* ViewController.h */,
 				3EC714F019DBF9ED0073CACF /* ViewController.m */,
+				51F590701AC6B68600BFA6B4 /* FViewController.h */,
+				51F590711AC6B68600BFA6B4 /* FViewController.m */,
 				3E30680319E3558C005A810E /* FirstItemViewController.h */,
 				3E30680419E3558C005A810E /* FirstItemViewController.m */,
 				3E30680819E36061005A810E /* MaskView.xib */,
@@ -306,6 +316,7 @@
 				3EC7151919DBFC6E0073CACF /* SecondViewController.m */,
 				51F814471AC644CB006FBADC /* HistoryCell.h */,
 				51F814481AC644CB006FBADC /* HistoryCell.m */,
+				51D1649D1AC6F9610000EEA7 /* HistoryCell.xib */,
 			);
 			name = secondItem;
 			sourceTree = "<group>";
@@ -379,10 +390,12 @@
 		3EC714E119DBF9ED0073CACF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				51D164971AC6CC7D0000EEA7 /* TimeTool.h */,
+				51D164981AC6CC7D0000EEA7 /* TimeTool.m */,
+				51D1649A1AC6DC6A0000EEA7 /* CalorieBrain.h */,
+				51D1649B1AC6DC6A0000EEA7 /* CalorieBrain.m */,
 				3E6BC05719E682D800F572A6 /* DocumentTool.h */,
 				3E6BC05819E682D800F572A6 /* DocumentTool.m */,
-				51F814441AC62E21006FBADC /* TimeTool.h */,
-				51F814451AC62E21006FBADC /* TimeTool.m */,
 				3EC7150F19DBFA020073CACF /* images */,
 				3EC714E219DBF9ED0073CACF /* HealthCare-Info.plist */,
 				3EC714E319DBF9ED0073CACF /* InfoPlist.strings */,
@@ -569,6 +582,7 @@
 				51F814541AC66B30006FBADC /* Default@2x.png in Resources */,
 				3E6D7E7119E2B77C00E8F610 /* run_03.png in Resources */,
 				3EC7151219DBFA170073CACF /* Icon.png in Resources */,
+				51D1649E1AC6F9610000EEA7 /* HistoryCell.xib in Resources */,
 				3E0034FD19EA780F00BFA248 /* muscle_04_01@2x.png in Resources */,
 				3E0034F619EA780F00BFA248 /* muscle_01_01.png in Resources */,
 				3E956CA019E4C3E800631098 /* ring_02@2x.png in Resources */,
@@ -683,13 +697,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51D1649C1AC6DC6A0000EEA7 /* CalorieBrain.m in Sources */,
 				51F8144C1AC64BC8006FBADC /* MyExerciseCell.m in Sources */,
 				3E30681119E37316005A810E /* TabBarController.m in Sources */,
 				3E6BC05319E62A0600F572A6 /* AddClickViewController.m in Sources */,
+				51F590721AC6B68600BFA6B4 /* FViewController.m in Sources */,
 				3EC7151A19DBFC6E0073CACF /* SecondViewController.m in Sources */,
 				3EC7151D19DBFC7B0073CACF /* ThirdViewController.m in Sources */,
 				3E30681419E37BFF005A810E /* AddExeViewController.m in Sources */,
 				3E707CD219E7CFAB00A50CA2 /* AddMuscleViewController.m in Sources */,
+				51D164991AC6CC7D0000EEA7 /* TimeTool.m in Sources */,
 				3E30680519E3558C005A810E /* FirstItemViewController.m in Sources */,
 				3E79B42E19E3D0AA00C4EA61 /* SecondItemViewController.m in Sources */,
 				3E99B9F919E55C4200515629 /* ThirdItemViewController.m in Sources */,
@@ -697,7 +714,6 @@
 				51F814491AC644CB006FBADC /* HistoryCell.m in Sources */,
 				3EC714EB19DBF9ED0073CACF /* AppDelegate.m in Sources */,
 				3EC714E719DBF9ED0073CACF /* main.m in Sources */,
-				51F814461AC62E21006FBADC /* TimeTool.m in Sources */,
 				3E99B9EF19E5477B00515629 /* ShowMuscleExeViewController.m in Sources */,
 				514E96D41AC6A56000A9C7AF /* MaskView.m in Sources */,
 				3E6BC05919E682D800F572A6 /* DocumentTool.m in Sources */,

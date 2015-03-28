@@ -13,11 +13,11 @@
 - (id)init {
     self = [super init];
     if (self) {
-        self = [[[NSBundle mainBundle]loadNibNamed:@"MaskView" owner:nil options:nil] lastObject];
+        //self = [[[NSBundle mainBundle]loadNibNamed:@"MaskView" owner:nil options:nil] lastObject];
     }
     return self;
 }
-+(id)nib {
++ (id)maskView {
     return [[[NSBundle mainBundle]loadNibNamed:@"MaskView" owner:nil options:nil] lastObject];
 }
 /*

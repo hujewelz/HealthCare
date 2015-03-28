@@ -14,16 +14,13 @@
 @interface FirstItemViewController : UITableViewController
 
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
-@property (weak, nonatomic) IBOutlet UILabel *alertlabel;
-@property (weak, nonatomic) IBOutlet UILabel *speedLabel;
-@property (weak, nonatomic) IBOutlet UILabel *avgSpeedlabel;
-@property (weak, nonatomic) IBOutlet UIButton *button;
-@property (weak, nonatomic) IBOutlet UILabel *sumDistancelabel;
+
 @property (weak, nonatomic) IBOutlet UILabel *showSpeed;
 @property (weak, nonatomic) IBOutlet UILabel *showAvgSpeed;
 @property (weak, nonatomic) IBOutlet UILabel *showDistance;
-@property (weak, nonatomic) IBOutlet UIImageView *ringIImageView;
-- (IBAction)buttonClick:(id)sender;
+@property (weak, nonatomic) IBOutlet UILabel *showCalorie;
+
+
 
 
 @end

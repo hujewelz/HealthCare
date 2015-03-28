@@ -10,21 +10,23 @@
 #import "DocumentTool.h"
 #import "TimeTool.h"
 #import "MaskView.h"
+#import "CalorieBrain.h"
 
-@interface FirstItemViewController () <CLLocationManagerDelegate, UITableViewDataSource, UITableViewDelegate>
+@interface FirstItemViewController () <CLLocationManagerDelegate>
 {
     NSMutableDictionary *dictionary;
     NSMutableArray *images;
     SystemSoundID sound;    //系统声音的Id 1000-2000
     NSDate *startTime;
     NSString *dateString;
-    MaskView *maskView;
+   
     
 }
 @property (strong, nonatomic) CLLocationManager *locationManager;
 @property (strong, nonatomic) CLLocation *prevLocation;
 @property (assign, nonatomic) CGFloat sumTime;
 @property (assign, nonatomic) CGFloat sumDistance;
+@property (strong, nonatomic)  MaskView *maskView;
 @end
 
 @implementation FirstItemViewController
@@ -50,42 +52,41 @@
     
     dictionary = [NSMutableDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle]pathForResource:@"animation" ofType:@"plist"]];
     
-    self.speedLabel.alpha = 0;
-    self.avgSpeedlabel.alpha = 0;
-    self.sumDistancelabel.alpha = 0;
-    
     //获取系统声音路径
     NSURL *url = [NSURL URLWithString:@"/System/Library/Audio/UISounds/begin_video_record.caf"];
     AudioServicesCreateSystemSoundID((__bridge CFURLRef)(url), &sound);
     
-    maskView = [MaskView nib];
-    [self.view addSubview:maskView];
+    _maskView = [MaskView maskView];
+    [self.tableView addSubview:_maskView];
+    UIButton *startBtn = (UIButton *)[_maskView viewWithTag:2];
+    [self startExercise:startBtn];
+   // NSLog(@"%@, %@", startBtn, maskView);
+    //[startBtn addTarget:self action:@selector(startExercise:) forControlEvents:UIControlEventTouchUpInside];
     
-    [self buttonFade];
-    [self.locationManager startUpdatingLocation];
     self.tableView.allowsSelection = NO;
+    self.tableView.scrollEnabled = NO;
     self.tableView.contentOffset = CGPointMake(0, 35);
     self.tableView.contentInset = UIEdgeInsetsMake(-35, 0, 0, 0);
     
+    //[self.locationManager startUpdatingLocation];
 }
 
 - (void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:YES];
+    [self.locationManager stopUpdatingLocation];
+    if (!startTime) return;
     
-    if (self.showSpeed.text.length !=0) {
-        
-        //如果显示的数据不为空，则将锻炼写入到历史记录中
-        //[self performSelector:@selector(wrireToHistory) withObject:nil afterDelay:1];
-        TimeTool *tool = [[TimeTool alloc] init];
-        NSString *interval =  [tool intervalSinceNow:startTime];
-        NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:
-                              self.title, @"title",
-                              interval, @"interval",
-                              dateString, @"date",nil];
-        [[DocumentTool sharedDocumentTool] write:dict ToFileWithFileName:@"history"];
+    //如果显示的数据不为空，则将锻炼写入到历史记录中
+    NSString *interval =  [[TimeTool shareTimeTool] intervalSinceNow:startTime];
+    NSLog(@"锻炼时间:%@",interval);
+    NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:
+                          self.title, @"title",
+                          interval, @"interval",
+                          dateString, @"date",nil];
+    [[DocumentTool sharedDocumentTool] write:dict ToFileWithFileName:@"history"];
 
-    }
+   
    
     
 }
@@ -117,13 +118,14 @@
     CLLocation *newLocatin = [locations lastObject];
     if (newLocatin.horizontalAccuracy < kCLLocationAccuracyHundredMeters) {
         if (self.prevLocation) {
+            NSLog(@"loacation succeed");
             
             NSTimeInterval dTime = [newLocatin.timestamp timeIntervalSinceDate:self.prevLocation.timestamp];
             self.sumTime += dTime;
             
             CGFloat distance = [newLocatin distanceFromLocation:self.prevLocation];
             
-            if (distance < 1.0f) return;
+            //if (distance < 1.0f) return;
             
             self.sumDistance += distance;
             CGFloat speed = distance / dTime;
@@ -131,21 +133,19 @@
             
             //按钮消失，同时播放动画
             [self buttonFade];
+            NSTimeInterval interval = [[TimeTool shareTimeTool] dutationSinceNow:startTime];
+            CGFloat calorie = [[CalorieBrain calorieBrain] calorieWithSpeed:avgSpeed andWeight:60 timeInterval:interval];
+            NSLog(@"运动%f分钟，小号了%.2f卡路里", interval, calorie);
             
-            NSString *speedLabel = [NSString stringWithFormat:@" %.2f米/秒",speed];
-            NSString *avgSpeedLabel = [NSString stringWithFormat:@" %.2f米/秒",avgSpeed];
-            NSString *distanceLabel = [NSString stringWithFormat:@" %.2f米", self.sumDistance];
-            
-            
+            NSString *speedLabel = [NSString stringWithFormat:@" %.2f 米/秒",speed];
+            NSString *avgSpeedLabel = [NSString stringWithFormat:@" %.2f 米/秒",avgSpeed];
+            NSString *distanceLabel = [NSString stringWithFormat:@" %.2f 米", self.sumDistance];
+            NSString *calorieLab = [NSString stringWithFormat:@" %.2f kcal", calorie];
             [UIView animateWithDuration:1.0f animations:^{
-                self.speedLabel.alpha = 1;
-                self.avgSpeedlabel.alpha = 1;
-                self.sumDistancelabel.alpha = 1;
-                
                 self.showSpeed.text = speedLabel;
                 self.showAvgSpeed.text = avgSpeedLabel;
                 self.showDistance.text = distanceLabel;
-                
+                self.showCalorie.text = calorieLab;
             }];
             
            
@@ -164,27 +164,30 @@
 #pragma mark 页面开始显示数据时调用，移除按钮及其动画
 - (void) buttonFade
 {
+    NSLog(@"btn fade.....");
+    if (!startTime) {
+        startTime = [NSDate date];
+        NSLog(@"startTime: %@", startTime);
+    }
+    
     [UIView animateWithDuration:1.0f animations:^{
         
-        //self.button.alpha = 0;
-        //self.alertlabel.alpha = 0;
+        _maskView.alpha = 0;
         
     } completion:^(BOOL finished) {
         
         int count = [[dictionary objectForKey:@"run"] intValue];
         
-        //移除按钮
-        [self.button removeFromSuperview];
-        //移除label
-        [self.alertlabel removeFromSuperview];
-        //移除环形
-        [self.ringIImageView removeFromSuperview];
+        //移除按钮maskView
+        [_maskView removeFromSuperview];
+        _maskView = nil;
+        
         //清空动画数组
         [images removeAllObjects];
         
        //运行运动动画
         [self animation:count imageView:self.imageView withDuration:0.07 AndImageNamed:@"run"];
-        startTime = [NSDate date];
+        
         NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
         [dateFormatter setDateFormat:@"MM-dd HH:mm:ss"];
         dateString = [dateFormatter stringFromDate:startTime];
@@ -194,15 +197,15 @@
 }
 
 #pragma mark 点击按钮调用
-- (IBAction)buttonClick:(id)sender {
-    
-    [sender setEnabled:NO];
+- (void)startExercise:(UIButton *)sender {
+   // [sender setEnabled:NO];
     
     //播放音效
     AudioServicesPlaySystemSound(sound);
     
     int count = [[dictionary objectForKey:@"ring"] intValue];
-    [self animation:count imageView:self.ringIImageView withDuration:0.2 AndImageNamed:@"ring"];
+    UIImageView *imageV = (UIImageView *)[_maskView viewWithTag:1];
+    [self animation:count imageView:imageV withDuration:0.2 AndImageNamed:@"ring"];
     
     //开始定位
     [self.locationManager startUpdatingLocation];

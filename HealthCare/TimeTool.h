@@ -11,5 +11,8 @@
 @interface TimeTool : NSObject
 
 - (NSString *)intervalSinceNow: (NSDate *) theDate;
+- (NSTimeInterval)dutationSinceNow: (NSDate *) theDate;
+@property (assign, nonatomic) NSTimeInterval interval;
++ (instancetype)shareTimeTool;
 
 @end

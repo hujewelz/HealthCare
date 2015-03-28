@@ -33,6 +33,7 @@
     
     dataList = [NSMutableArray arrayWithContentsOfFile:[[NSBundle mainBundle]pathForResource:@"muscle" ofType:@"plist"]];
     
+    self.tableView.tableFooterView = [[UIView alloc] init];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     
@@ -49,7 +50,7 @@
 
 - (IBAction)AddBarbutton:(id)sender {
     UIStoryboard *mainSb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    UIViewController *addExeViewController = [mainSb instantiateViewControllerWithIdentifier:@"AddExercise"];
+    UIViewController *addExeViewController = [[UINavigationController alloc] initWithRootViewController:[mainSb instantiateViewControllerWithIdentifier:@"AddExercise"]];
     addExeViewController.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
     
     [self presentViewController:addExeViewController animated:YES completion:^{
@@ -113,7 +114,7 @@
 
     if ([dict[@"lastTitle"] isEqualToString:@"跑步"]) {
         
-        UIViewController *firstItemViewController = [[FirstItemViewController alloc] initWithNibName:@"FirstItemViewController" bundle:nil];
+        UIViewController *firstItemViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"Run"];
         
         firstItemViewController.title = dict[@"lastTitle"];
         

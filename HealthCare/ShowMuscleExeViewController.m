@@ -49,8 +49,7 @@
     synth = nil;
     
     if (startTime != nil) {
-        TimeTool *timeTool = [[TimeTool alloc] init];
-        NSString *interval =  [timeTool intervalSinceNow:startTime];
+        NSString *interval =  [[TimeTool shareTimeTool] intervalSinceNow:startTime];
         NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:
                           self.title, @"title",
                           interval, @"interval",

@@ -13,4 +13,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *intervalLab;
 @property (weak, nonatomic) IBOutlet UILabel *timeLab;
 @property (strong, nonatomic) NSDictionary *data;
+
++ (id)nib;
+
 @end

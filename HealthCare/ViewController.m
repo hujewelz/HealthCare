@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "FirstItemViewController.h"
 #import "SecondItemViewController.h"
+#import "FViewController.h"
 #import "ThirdItemViewController.h"
 
 @interface ViewController () <UITableViewDelegate,UITableViewDataSource>

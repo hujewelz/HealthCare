@@ -1,5 +1,5 @@
 //
-//  MaskView.h
+//  FViewController.h
 //  HealthCare
 //
 //  Created by jewelz on 15/3/28.
@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MaskView : UIView
-@property (weak, nonatomic) IBOutlet UIImageView *imageView;
-+ (id)maskView;
+@interface FViewController : UIViewController
+
 @end
