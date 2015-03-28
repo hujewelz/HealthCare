@@ -16,6 +16,7 @@
     NSMutableArray *images;
     SystemSoundID sound;    //系统声音的Id 1000-2000
     NSDate *startTime;
+    NSString *dateString;
     
 }
 @property (strong, nonatomic) CLLocationManager *locationManager;
@@ -69,7 +70,8 @@
         NSString *interval =  [tool intervalSinceNow:startTime];
         NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:
                               self.title, @"title",
-                              interval, @"interval",nil];
+                              interval, @"interval",
+                              dateString, @"date",nil];
         [[DocumentTool sharedDocumentTool] write:dict ToFileWithFileName:@"history"];
 
     }
@@ -171,6 +173,11 @@
         
        //运行运动动画
         [self animation:count imageView:self.imageView withDuration:0.07 AndImageNamed:@"run"];
+        startTime = [NSDate date];
+        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+        [dateFormatter setDateFormat:@"MM-dd HH:mm:ss"];
+        dateString = [dateFormatter stringFromDate:startTime];
+        
 
     }];
 }

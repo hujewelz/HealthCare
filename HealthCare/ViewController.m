@@ -69,11 +69,12 @@
         
         [self.navigationController pushViewController:firstItemViewController animated:YES];
     } else if (indexPath.row == 1) {
-        UIViewController *secondItemViewController = [[SecondItemViewController alloc] initWithNibName:@"SecondItemViewController" bundle:nil];
+        UIViewController *secondItemViewController = [[SecondItemViewController alloc] init];
         
         secondItemViewController.title = [dict objectForKey:@"title"];
-        
+        secondItemViewController.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:secondItemViewController animated:YES];
+        
     } else {
         
         UIViewController *thirdItemViewController = [[ThirdItemViewController alloc]initWithNibName:@"ThirdItemViewController" bundle:nil];

@@ -12,28 +12,29 @@
 @interface SecondItemViewController () <UITableViewDataSource, UITableViewDelegate>
 {
     NSArray *dataList;
+    UITableView *_tableView;
 }
 
 @end
 
 @implementation SecondItemViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-        self.hidesBottomBarWhenPushed = YES;
-    }
-    return self;
+- (void)loadView {
+    UIView *view = [[UIView alloc] initWithFrame:[UIScreen mainScreen ].bounds];
+    self.view = view;
+    _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) style:UITableViewStylePlain];
+    [self.view addSubview:_tableView];
+    
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
-    self.tableView.delegate = self;
-    self.tableView.dataSource = self;
+    
+    _tableView.delegate = self;
+    _tableView.dataSource = self;
+    //self.tableView.contentSize = CGSizeMake(self.view.frame.size.width, self.view.frame.size.width + 80);
 
     dataList = [NSMutableArray arrayWithContentsOfFile:[[NSBundle mainBundle]pathForResource:@"muscle" ofType:@"plist"]];
 }
@@ -57,7 +58,7 @@
     NSDictionary *dict = [dataList objectAtIndex:indexPath.row];
     
     //设置row选中时的类型
-    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    //cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     cell.textLabel.text = [dict objectForKey:@"title"];
     cell.imageView.image = [UIImage imageNamed:[dict objectForKey:@"icon"]];
@@ -81,6 +82,10 @@
 - (CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return 60;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
+    return 0;
 }
 
 @end

@@ -19,6 +19,7 @@
     AVSpeechUtterance *utterance;
     DocumentTool *tool;
     NSDate *startTime;
+    NSString *dateString;
 }
 
 @end
@@ -45,13 +46,15 @@
 - (void) viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:YES];
+    synth = nil;
     
     if (startTime != nil) {
         TimeTool *timeTool = [[TimeTool alloc] init];
         NSString *interval =  [timeTool intervalSinceNow:startTime];
         NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:
                           self.title, @"title",
-                          interval, @"interval",nil];
+                          interval, @"interval",
+                        dateString, @"date",nil];
         [[DocumentTool sharedDocumentTool] write:dict ToFileWithFileName:@"history"];
         
     }
@@ -93,6 +96,9 @@
     
     [self startToSpeech];
     startTime = [[NSDate alloc] init];
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"MM-dd HH:mm:ss"];
+    dateString = [dateFormatter stringFromDate:startTime];
     
 }
 

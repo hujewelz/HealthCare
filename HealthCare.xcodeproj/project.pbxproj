@@ -21,7 +21,6 @@
 		3E0034FF19EA780F00BFA248 /* muscle_05_01@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E0034F119EA780F00BFA248 /* muscle_05_01@2x.png */; };
 		3E00350019EA780F00BFA248 /* muscle_06_01.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E0034F219EA780F00BFA248 /* muscle_06_01.png */; };
 		3E00350119EA780F00BFA248 /* muscle_06_01@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E0034F319EA780F00BFA248 /* muscle_06_01@2x.png */; };
-		3E00350419EA8E6C00BFA248 /* TimeTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E00350319EA8E6C00BFA248 /* TimeTool.m */; };
 		3E30680519E3558C005A810E /* FirstItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E30680419E3558C005A810E /* FirstItemViewController.m */; };
 		3E30680719E35887005A810E /* animation.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3E30680619E35887005A810E /* animation.plist */; };
 		3E30680919E36061005A810E /* FirstItemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E30680819E36061005A810E /* FirstItemViewController.xib */; };
@@ -48,7 +47,6 @@
 		3E707CD219E7CFAB00A50CA2 /* AddMuscleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E707CD119E7CFAB00A50CA2 /* AddMuscleViewController.m */; };
 		3E707CD419E7DBBB00A50CA2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E707CD319E7DBBB00A50CA2 /* AVFoundation.framework */; };
 		3E79B42E19E3D0AA00C4EA61 /* SecondItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E79B42C19E3D0AA00C4EA61 /* SecondItemViewController.m */; };
-		3E79B42F19E3D0AA00C4EA61 /* SecondItemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E79B42D19E3D0AA00C4EA61 /* SecondItemViewController.xib */; };
 		3E79B43D19E411A500C4EA61 /* bg_button_click_default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E79B43719E411A500C4EA61 /* bg_button_click_default.png */; };
 		3E956C8419E4BD1100631098 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E956C8319E4BD1100631098 /* AudioToolbox.framework */; };
 		3E956C8619E4C02200631098 /* bg_button_click_default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E956C8519E4C02200631098 /* bg_button_click_default@2x.png */; };
@@ -102,6 +100,14 @@
 		3EC7151719DBFAFB0073CACF /* Icon-spotlight.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EC7151619DBFAFB0073CACF /* Icon-spotlight.png */; };
 		3EC7151A19DBFC6E0073CACF /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EC7151919DBFC6E0073CACF /* SecondViewController.m */; };
 		3EC7151D19DBFC7B0073CACF /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EC7151C19DBFC7B0073CACF /* ThirdViewController.m */; };
+		51F814461AC62E21006FBADC /* TimeTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F814451AC62E21006FBADC /* TimeTool.m */; };
+		51F814491AC644CB006FBADC /* HistoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F814481AC644CB006FBADC /* HistoryCell.m */; };
+		51F8144C1AC64BC8006FBADC /* MyExerciseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F8144B1AC64BC8006FBADC /* MyExerciseCell.m */; };
+		51F8144E1AC66A9C006FBADC /* Images-2.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51F8144D1AC66A9C006FBADC /* Images-2.xcassets */; };
+		51F814531AC66B30006FBADC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 51F8144F1AC66B30006FBADC /* Default-568h@2x.png */; };
+		51F814541AC66B30006FBADC /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 51F814501AC66B30006FBADC /* Default@2x.png */; };
+		51F814551AC66B30006FBADC /* Default-568h.png in Resources */ = {isa = PBXBuildFile; fileRef = 51F814511AC66B30006FBADC /* Default-568h.png */; };
+		51F814561AC66B30006FBADC /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 51F814521AC66B30006FBADC /* Default.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,8 +135,6 @@
 		3E0034F119EA780F00BFA248 /* muscle_05_01@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "muscle_05_01@2x.png"; sourceTree = "<group>"; };
 		3E0034F219EA780F00BFA248 /* muscle_06_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = muscle_06_01.png; sourceTree = "<group>"; };
 		3E0034F319EA780F00BFA248 /* muscle_06_01@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "muscle_06_01@2x.png"; sourceTree = "<group>"; };
-		3E00350219EA8E6C00BFA248 /* TimeTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeTool.h; sourceTree = "<group>"; };
-		3E00350319EA8E6C00BFA248 /* TimeTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeTool.m; sourceTree = "<group>"; };
 		3E30680319E3558C005A810E /* FirstItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstItemViewController.h; sourceTree = "<group>"; };
 		3E30680419E3558C005A810E /* FirstItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstItemViewController.m; sourceTree = "<group>"; };
 		3E30680619E35887005A810E /* animation.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = animation.plist; sourceTree = "<group>"; };
@@ -167,7 +171,6 @@
 		3E707CD319E7DBBB00A50CA2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		3E79B42B19E3D0AA00C4EA61 /* SecondItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondItemViewController.h; sourceTree = "<group>"; };
 		3E79B42C19E3D0AA00C4EA61 /* SecondItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondItemViewController.m; sourceTree = "<group>"; };
-		3E79B42D19E3D0AA00C4EA61 /* SecondItemViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondItemViewController.xib; sourceTree = "<group>"; };
 		3E79B43719E411A500C4EA61 /* bg_button_click_default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_button_click_default.png; sourceTree = "<group>"; };
 		3E956C8319E4BD1100631098 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		3E956C8519E4C02200631098 /* bg_button_click_default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg_button_click_default@2x.png"; sourceTree = "<group>"; };
@@ -230,6 +233,17 @@
 		3EC7151919DBFC6E0073CACF /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		3EC7151B19DBFC7B0073CACF /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
 		3EC7151C19DBFC7B0073CACF /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		51F814441AC62E21006FBADC /* TimeTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeTool.h; sourceTree = "<group>"; };
+		51F814451AC62E21006FBADC /* TimeTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeTool.m; sourceTree = "<group>"; };
+		51F814471AC644CB006FBADC /* HistoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryCell.h; sourceTree = "<group>"; };
+		51F814481AC644CB006FBADC /* HistoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryCell.m; sourceTree = "<group>"; };
+		51F8144A1AC64BC8006FBADC /* MyExerciseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyExerciseCell.h; sourceTree = "<group>"; };
+		51F8144B1AC64BC8006FBADC /* MyExerciseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyExerciseCell.m; sourceTree = "<group>"; };
+		51F8144D1AC66A9C006FBADC /* Images-2.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Images-2.xcassets"; sourceTree = "<group>"; };
+		51F8144F1AC66B30006FBADC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		51F814501AC66B30006FBADC /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		51F814511AC66B30006FBADC /* Default-568h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h.png"; sourceTree = "<group>"; };
+		51F814521AC66B30006FBADC /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -269,7 +283,6 @@
 				3E30680819E36061005A810E /* FirstItemViewController.xib */,
 				3E79B42B19E3D0AA00C4EA61 /* SecondItemViewController.h */,
 				3E79B42C19E3D0AA00C4EA61 /* SecondItemViewController.m */,
-				3E79B42D19E3D0AA00C4EA61 /* SecondItemViewController.xib */,
 				3E99B9F619E55C4200515629 /* ThirdItemViewController.h */,
 				3E99B9F719E55C4200515629 /* ThirdItemViewController.m */,
 				3E99B9F819E55C4200515629 /* ThirdItemViewController.xib */,
@@ -286,6 +299,8 @@
 			children = (
 				3EC7151819DBFC6E0073CACF /* SecondViewController.h */,
 				3EC7151919DBFC6E0073CACF /* SecondViewController.m */,
+				51F814471AC644CB006FBADC /* HistoryCell.h */,
+				51F814481AC644CB006FBADC /* HistoryCell.m */,
 			);
 			name = secondItem;
 			sourceTree = "<group>";
@@ -295,6 +310,8 @@
 			children = (
 				3EC7151B19DBFC7B0073CACF /* ThirdViewController.h */,
 				3EC7151C19DBFC7B0073CACF /* ThirdViewController.m */,
+				51F8144A1AC64BC8006FBADC /* MyExerciseCell.h */,
+				51F8144B1AC64BC8006FBADC /* MyExerciseCell.m */,
 				3E30681219E37BFF005A810E /* AddExeViewController.h */,
 				3E30681319E37BFF005A810E /* AddExeViewController.m */,
 				3E707CD019E7CFAB00A50CA2 /* AddMuscleViewController.h */,
@@ -348,11 +365,8 @@
 				3E79B43119E3D27600C4EA61 /* secondItem */,
 				3E79B43219E3D28200C4EA61 /* thirdItem */,
 				3EC714F219DBF9ED0073CACF /* Images.xcassets */,
+				51F8144D1AC66A9C006FBADC /* Images-2.xcassets */,
 				3EC714E119DBF9ED0073CACF /* Supporting Files */,
-				3E6BC05719E682D800F572A6 /* DocumentTool.h */,
-				3E6BC05819E682D800F572A6 /* DocumentTool.m */,
-				3E00350219EA8E6C00BFA248 /* TimeTool.h */,
-				3E00350319EA8E6C00BFA248 /* TimeTool.m */,
 			);
 			path = HealthCare;
 			sourceTree = "<group>";
@@ -360,6 +374,10 @@
 		3EC714E119DBF9ED0073CACF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3E6BC05719E682D800F572A6 /* DocumentTool.h */,
+				3E6BC05819E682D800F572A6 /* DocumentTool.m */,
+				51F814441AC62E21006FBADC /* TimeTool.h */,
+				51F814451AC62E21006FBADC /* TimeTool.m */,
 				3EC7150F19DBFA020073CACF /* images */,
 				3EC714E219DBF9ED0073CACF /* HealthCare-Info.plist */,
 				3EC714E319DBF9ED0073CACF /* InfoPlist.strings */,
@@ -436,6 +454,10 @@
 				3E6D7E6219E2B77C00E8F610 /* run_01.png */,
 				3E6D7E6319E2B77C00E8F610 /* run_06.png */,
 				3E6D7E6419E2B77C00E8F610 /* run_05.png */,
+				51F8144F1AC66B30006FBADC /* Default-568h@2x.png */,
+				51F814501AC66B30006FBADC /* Default@2x.png */,
+				51F814511AC66B30006FBADC /* Default-568h.png */,
+				51F814521AC66B30006FBADC /* Default.png */,
 				3E6D7E6519E2B77C00E8F610 /* run_04.png */,
 				3E6D7E6619E2B77C00E8F610 /* run_03.png */,
 				3E6D7E6719E2B77C00E8F610 /* run_02.png */,
@@ -539,6 +561,7 @@
 				3E6D7E8B19E2C68600E8F610 /* tab_button_myExe_dafault.png in Resources */,
 				3E0034FC19EA780F00BFA248 /* muscle_04_01.png in Resources */,
 				3E956C8619E4C02200631098 /* bg_button_click_default@2x.png in Resources */,
+				51F814541AC66B30006FBADC /* Default@2x.png in Resources */,
 				3E6D7E7119E2B77C00E8F610 /* run_03.png in Resources */,
 				3EC7151219DBFA170073CACF /* Icon.png in Resources */,
 				3E0034FD19EA780F00BFA248 /* muscle_04_01@2x.png in Resources */,
@@ -551,11 +574,11 @@
 				3E99BA1C19E5851400515629 /* button_clock_default@2x.png in Resources */,
 				3E6D7E6F19E2B77C00E8F610 /* run_05.png in Resources */,
 				3E956C9119E4C1DD00631098 /* yoga.png in Resources */,
+				51F814551AC66B30006FBADC /* Default-568h.png in Resources */,
 				3E99BA1719E5850900515629 /* button_clock_selected.png in Resources */,
 				3E0034FE19EA780F00BFA248 /* muscle_05_01.png in Resources */,
 				3E99B9F419E5574A00515629 /* muscle_00_02.png in Resources */,
 				3E6D7E7B19E2B82D00E8F610 /* project.plist in Resources */,
-				3E79B42F19E3D0AA00C4EA61 /* SecondItemViewController.xib in Resources */,
 				3E956CA219E4C3E800631098 /* ring_03@2x.png in Resources */,
 				3E0034FA19EA780F00BFA248 /* muscle_03_01.png in Resources */,
 				3E6D7E7319E2B77C00E8F610 /* run_07.png in Resources */,
@@ -567,9 +590,12 @@
 				3E6D7E7419E2B77C00E8F610 /* run_08.png in Resources */,
 				3E6D7E6D19E2B77C00E8F610 /* run_01.png in Resources */,
 				3EC7151719DBFAFB0073CACF /* Icon-spotlight.png in Resources */,
+				51F8144E1AC66A9C006FBADC /* Images-2.xcassets in Resources */,
 				3EAF864619EE142900DEF332 /* button_speech_default.png in Resources */,
 				3E30680719E35887005A810E /* animation.plist in Resources */,
+				51F814531AC66B30006FBADC /* Default-568h@2x.png in Resources */,
 				3EC714E519DBF9ED0073CACF /* InfoPlist.strings in Resources */,
+				51F814561AC66B30006FBADC /* Default.png in Resources */,
 				3E00350119EA780F00BFA248 /* muscle_06_01@2x.png in Resources */,
 				3EC714EE19DBF9ED0073CACF /* Main.storyboard in Resources */,
 				3E0034FF19EA780F00BFA248 /* muscle_05_01@2x.png in Resources */,
@@ -652,6 +678,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51F8144C1AC64BC8006FBADC /* MyExerciseCell.m in Sources */,
 				3E30681119E37316005A810E /* TabBarController.m in Sources */,
 				3E6BC05319E62A0600F572A6 /* AddClickViewController.m in Sources */,
 				3EC7151A19DBFC6E0073CACF /* SecondViewController.m in Sources */,
@@ -662,9 +689,10 @@
 				3E79B42E19E3D0AA00C4EA61 /* SecondItemViewController.m in Sources */,
 				3E99B9F919E55C4200515629 /* ThirdItemViewController.m in Sources */,
 				3EC714F119DBF9ED0073CACF /* ViewController.m in Sources */,
+				51F814491AC644CB006FBADC /* HistoryCell.m in Sources */,
 				3EC714EB19DBF9ED0073CACF /* AppDelegate.m in Sources */,
 				3EC714E719DBF9ED0073CACF /* main.m in Sources */,
-				3E00350419EA8E6C00BFA248 /* TimeTool.m in Sources */,
+				51F814461AC62E21006FBADC /* TimeTool.m in Sources */,
 				3E99B9EF19E5477B00515629 /* ShowMuscleExeViewController.m in Sources */,
 				3E6BC05919E682D800F572A6 /* DocumentTool.m in Sources */,
 			);
@@ -794,12 +822,13 @@
 		3EC7150A19DBF9ED0073CACF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HealthCare/HealthCare-Prefix.pch";
 				INFOPLIST_FILE = "HealthCare/HealthCare-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -808,12 +837,13 @@
 		3EC7150B19DBF9ED0073CACF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HealthCare/HealthCare-Prefix.pch";
 				INFOPLIST_FILE = "HealthCare/HealthCare-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

@@ -8,10 +8,12 @@
 
 #import "SecondViewController.h"
 #import "DocumentTool.h"
+#import "HistoryCell.h"
 
 @interface SecondViewController () <UITableViewDelegate, UITableViewDataSource>
 {
     NSMutableArray *historyData;
+   // UITableView *_tableView;
     NSString *path;
 }
 
@@ -19,15 +21,23 @@
 
 @implementation SecondViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-        
-    }
-    return self;
-}
+//- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+//{
+//    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+//    if (self) {
+//        // Custom initialization
+//        
+//    }
+//    return self;
+//}
+
+//- (void)loadView {
+//    UIView *view = [[UIView alloc] initWithFrame:[UIScreen mainScreen ].bounds];
+//    self.view = view;
+//    _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) style:UITableViewStylePlain];
+//    [self.view addSubview:_tableView];
+//    self.hidesBottomBarWhenPushed = YES;
+//}
 
 - (void)viewDidLoad
 {
@@ -36,8 +46,8 @@
     NSString *document = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
     path = [document stringByAppendingPathComponent:@"history.plist"];
     
-    self.tableView.delegate = self;
-    self.tableView.dataSource = self;
+    _tableView.delegate = self;
+    _tableView.dataSource = self;
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -45,7 +55,7 @@
     [super viewWillAppear:YES];
     
     historyData = [NSMutableArray arrayWithContentsOfFile:path];
-    [self.tableView reloadData];
+    [_tableView reloadData];
 }
 
 - (NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -57,12 +67,14 @@
 - (UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *identifier = @"Cell";
-    UITableViewCell *tableViewCell = [tableView dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
+    HistoryCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
+//    if (!cell) {
+//        tableViewCell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:identifier];
+//    }
     
-    tableViewCell.textLabel.text = historyData[indexPath.row][@"title"];
-    tableViewCell.detailTextLabel.text = historyData[indexPath.row][@"interval"];
+   cell.data = historyData[indexPath.row];
     
-    return tableViewCell;
+    return cell;
 }
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath

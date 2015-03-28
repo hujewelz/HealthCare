@@ -11,6 +11,7 @@
 #import "FirstItemViewController.h"
 #import "ShowMuscleExeViewController.h"
 #import "ThirdItemViewController.h"
+#import "MyExerciseCell.h"
 
 @interface ThirdViewController () <UITableViewDataSource, UITableViewDelegate>
 {
@@ -65,34 +66,26 @@
 
 - (UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
-    if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"Cell"];
-    }
+    MyExerciseCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
     
+    NSMutableDictionary *dict = [dataArray objectAtIndex:indexPath.row];
     
-    NSDictionary *dict = [dataArray objectAtIndex:indexPath.row];
-    
-    cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    cell.textLabel.text = [dict objectForKey:@"title"];
-    
-    NSString *datailText = [NSString stringWithFormat:@"%@   %@", dict[@"lastTitle"],dict[@"date"]];
-    cell.detailTextLabel.text = datailText;
-
+    NSString *imageNamed;
     //设置图片
     if ([dict[@"lastTitle"] isEqualToString:@"跑步"]) {
         
-        cell.imageView.image = [UIImage imageNamed:@"run.png"];
+        imageNamed = @"run.png";
     } else if ([dict[@"lastTitle"] isEqualToString:@"瑜伽"]) {
         
-       cell.imageView.image = [UIImage imageNamed:@"yoga.png"];
+       imageNamed = @"yoga.png";
         
     } else {
         
-       cell.imageView.image = [UIImage imageNamed:@"sit-ups.png"];
+       imageNamed = @"sit-ups.png";
     }
     
-    
+    [dict setObject:imageNamed forKey:@"image"];
+    cell.data = dict;
     
     return cell;
 }

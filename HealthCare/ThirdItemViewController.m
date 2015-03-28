@@ -13,6 +13,7 @@
 @interface ThirdItemViewController ()
 {
     NSDate *startTime;
+    NSString *dateString;
 }
 
 @end
@@ -34,6 +35,9 @@
     [super viewDidLoad];
     
     startTime = [NSDate date];
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"MM-dd HH:mm:ss"];
+    dateString = [dateFormatter stringFromDate:startTime];
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -45,7 +49,8 @@
     NSString *interval =  [timeTool intervalSinceNow:startTime];
     NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:
                           self.title, @"title",
-                          interval, @"interval",nil];
+                          interval, @"interval",
+                          dateString, @"date",nil];
     [[DocumentTool sharedDocumentTool] write:dict ToFileWithFileName:@"history"];
     
 

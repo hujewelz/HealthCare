@@ -46,7 +46,7 @@
     [self dismissViewControllerAnimated:YES completion:^{
         NSDate *date = self.datePicker.date;
         NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-        [dateFormatter setDateFormat:@"YYY-MM-dd HH:mm:ss"];
+        [dateFormatter setDateFormat:@"MM-dd HH:mm:ss"];
         NSString *dateString = [dateFormatter stringFromDate:date];
         
         //创建一个本地通知
