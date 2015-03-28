@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>image</key>
+		<string>muscle_00_02.png</string>
+		<key>title</key>
+		<string>坐地蹬腿</string>
+		<key>content</key>
+		<string>标准版：【1】双手后撑至臀部着力点的位置，挺胸屈膝脚悬空，使得膝盖尽量靠近胸口，形成一个V字型； 【2】双脚悬空向前蹬的同时上半身后倾； 【3】然后双脚悬空收回，上半身前倾，使得膝盖靠近胸口，使之成为V型，至此为1次，共计做25次； 【4】始终要注意，上半身需挺直与地面至少保持45度。升级版：熟练以后，可以在第一步中把双手抬起，其他的要点与标准版相同。</string>
+		<key>icon</key>
+		<string>muscle_00_01.png</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>muscle_00_02.png</string>
+		<key>title</key>
+		<string>骑自行车</string>
+		<key>content</key>
+		<string>标准版：【1】双手后撑至臀部着力点的位置，挺胸屈膝脚悬空，使得膝盖尽量靠近胸口，形成一个V字型； 【2】双脚做顺时针以及逆时针蹬自行车的动作交叉画圈，画图过程中，大腿以尽量靠近胸口为佳使得整个身体保持V字型；左右各自画一圈为1次，各自做25次；【3】始终要注意，上半身需挺直与地面至少保持45度。升级版：熟练以后，可以在第一步中把双手抬起，其他的要点与标准版相同。</string>
+		<key>icon</key>
+		<string>muscle_01_01.png</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>muscle_00_02.png</string>
+		<key>title</key>
+		<string>青蛙动作</string>
+		<key>content</key>
+		<string>标准版：【1】坐姿，双手与肩平行抱膝，挺胸屈膝脚悬空，使得膝盖尽量靠近胸口，形成一个V字型；【3】双脚悬空向前蹬的同时，双手伸直做扩胸运动；【3】然后双脚悬空收回屈膝，双手做抱膝动作，往返为一次，做25次。【4】始终要注意，上半身需挺直与地面至少保持45度</string>
+		<key>icon</key>
+		<string>muscle_02_01.png</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>muscle_00_02.png</string>
+		<key>title</key>
+		<string>交叉腿仰卧起坐</string>
+		<key>content</key>
+		<string>标准版：【1】双脚绷直张开至少60度；【2】平躺左手放置脑后，右手伸直，垂直起坐碰至脚尖，先左后右，整个过程背部都需要挺直；【3】躺下，换手，右手放置脑后，左手伸直，先右后左，整个过程背部都需要挺直；【4】注意起坐时下巴不要触碰到自己的身体，整个过程中，不要使用自己的下巴进行起坐，一起一坐为一次，共做25次。升级版：熟练以后，可以在第一步中把双腿坐禅一样盘起，其他的要点与标准版相同。</string>
+		<key>icon</key>
+		<string>muscle_03_01.png</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>muscle_00_02.png</string>
+		<key>title</key>
+		<string>剪式打腿动作</string>
+		<key>content</key>
+		<string>标准版：【1】平躺，手贴身放在地板上，伸直踢出左脚，离地面一英尺；【2】右脚尽可能地伸直抬高，最好能与另一只脚呈90度，保持姿势至少2秒换腿；【3】双脚需要始终离地，脚每踢抬一次为一次，共做25次。</string>
+		<key>icon</key>
+		<string>muscle_04_01.png</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>muscle_00_02.png</string>
+		<key>title</key>
+		<string>踢腿</string>
+		<key>content</key>
+		<string>标准版：【1】平躺，手贴身放在地板上，双脚脚掌并拢，腿的上半部和下半部的距离保持一致；【2】双脚保持姿势向上至90°左右（脚尖正对正上方），双脚向垂直方向踢【3】缓慢保持姿势放下双腿，双脚不要沾地，继续往复，每踢一次为一次，共做25次。</string>
+		<key>icon</key>
+		<string>muscle_05_01.png</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>muscle_00_02.png</string>
+		<key>title</key>
+		<string>向上运动</string>
+		<key>content</key>
+		<string>标准版：【1】平躺，手贴身放在地板上，抬起腿，并拢，绷直，脚后跟朝上，脚尖朝下；【2】使用臀部的力量向垂直方向踢腿，脚不要沾地，回落与提起时形成的角度不要大于45°，臀部每提升一次为一次，共做25次。</string>
+		<key>icon</key>
+		<string>muscle_06_01.png</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>muscle_00_02.png</string>
+		<key>title</key>
+		<string>V型上滚</string>
+		<key>content</key>
+		<string>标准版：【1】平躺，双手伸直垂直于胸口举起，起坐双手触碰脚尖；【2】躺回去，在后背贴着地板的时候，双腿并拢抬起来，同时，双手控制上半身使劲起坐，以尽量再次碰到脚尖为佳；【3】至始至终，双手伸直均不要超过头顶，1-3完成为一次，共计完成25次。</string>
+		<key>icon</key>
+		<string>muscle_00_01.png</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>muscle_00_02.png</string>
+		<key>title</key>
+		<string>倾斜V型动作</string>
+		<key>content</key>
+		<string>标准版：【1】用自己的右侧侧躺与地面成30°，右手贴身放在地板上，左手放到脑后【2】用臂部支撑，腿绷直向垂直方向做V型起坐（即是头向前，腿向后）；【3】一旦开始，肩部和脚都要离开地板，不沾地；【4】右侧完毕后，再进行左侧，各自25次。</string>
+		<key>icon</key>
+		<string>muscle_00_01.png</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>muscle_00_02.png</string>
+		<key>title</key>
+		<string>爬腿</string>
+		<key>content</key>
+		<string>标准版：【1】平躺，右腿绷直抬起与身体至少成60°，这里有个难度，就是左脚的脚后跟越靠近臀部难度就越大；【2】上身爬起来，双手0~4步从右大腿爬到脚尖，双手使用的步数越大，难度就越大；【3】每爬一次为一次，各爬13次即可。</string>
+		<key>icon</key>
+		<string>muscle_00_01.png</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>muscle_00_02.png</string>
+		<key>title</key>
+		<string>梅森扭转</string>
+		<key>content</key>
+		<string>标准版：【1】坐姿，双手交叉握紧在一起成拳头状，双腿悬空抬起，能绷直为最难；【2】双手拳头从身体的左或右侧开始锤击地板，每次都要碰到地板为佳，就像划皮艇一样左右交叉锤击，左右为一次，40次或以上结束。</string>
+		<key>icon</key>
+		<string>muscle_00_01.png</string>
+	</dict>
+</array>
+</plist>

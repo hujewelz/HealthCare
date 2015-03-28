@@ -1,0 +1,48 @@
+
+/* Class = "IBUITabBarItem"; title = "历史记录"; ObjectID = "7Qy-82-oQ1"; */
+"7Qy-82-oQ1.title" = "历史记录";
+
+/* Class = "IBUINavigationItem"; title = "体育锻炼"; ObjectID = "Acq-CY-xF5"; */
+"Acq-CY-xF5.title" = "体育锻炼";
+
+/* Class = "IBUIBarButtonItem"; title = "存储"; ObjectID = "Cep-Ed-xvi"; */
+"Cep-Ed-xvi.title" = "存储";
+
+/* Class = "IBUIButton"; normalTitle = "Button"; ObjectID = "EnB-Hy-9cc"; */
+"EnB-Hy-9cc.normalTitle" = "Button";
+
+/* Class = "IBUINavigationItem"; title = "历史记录"; ObjectID = "I00-uX-d8l"; */
+"I00-uX-d8l.title" = "历史记录";
+
+/* Class = "IBUITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "IJv-Oy-dLx"; */
+"IJv-Oy-dLx.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.";
+
+/* Class = "IBUITabBarItem"; title = "体育锻炼"; ObjectID = "MIj-8K-IUK"; */
+"MIj-8K-IUK.title" = "体育锻炼";
+
+/* Class = "IBUITabBarItem"; title = "我的锻炼"; ObjectID = "ORm-yE-4B5"; */
+"ORm-yE-4B5.title" = "我的锻炼";
+
+/* Class = "IBUINavigationItem"; title = "我的锻炼"; ObjectID = "Rrd-YA-7vZ"; */
+"Rrd-YA-7vZ.title" = "我的锻炼";
+
+/* Class = "IBUILabel"; text = "【动作要领】"; ObjectID = "Wtj-7p-DTo"; */
+"Wtj-7p-DTo.text" = "【动作要领】";
+
+/* Class = "IBUILabel"; text = "【图示】"; ObjectID = "kiK-WD-Cpl"; */
+"kiK-WD-Cpl.text" = "【图示】";
+
+/* Class = "IBUIBarButtonItem"; title = "取消"; ObjectID = "kpb-qX-U8W"; */
+"kpb-qX-U8W.title" = "取消";
+
+/* Class = "IBUIBarButtonItem"; title = "完成"; ObjectID = "nwG-F0-yui"; */
+"nwG-F0-yui.title" = "完成";
+
+/* Class = "IBUIBarButtonItem"; title = "取消"; ObjectID = "nyY-PK-uNb"; */
+"nyY-PK-uNb.title" = "取消";
+
+/* Class = "IBUINavigationItem"; title = "设置提醒"; ObjectID = "rjl-yR-Rvh"; */
+"rjl-yR-Rvh.title" = "设置提醒";
+
+/* Class = "IBUINavigationItem"; title = "体育锻炼"; ObjectID = "uBv-a4-8PA"; */
+"uBv-a4-8PA.title" = "体育锻炼";
