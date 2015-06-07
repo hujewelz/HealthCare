@@ -33,15 +33,17 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+    _tableView.frame = self.view.frame;
+   
     NSString *document = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
     path = [document stringByAppendingPathComponent:@"history.plist"];
+   
     
     _tableView.delegate = self;
     _tableView.dataSource = self;
     _tableView.tableFooterView  = [[UIView alloc] init];
     _tableView.rowHeight = 50;
-    //[_tableView registerNib:[HistoryCell nib] forCellReuseIdentifier:IDENTIFIER];
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -64,7 +66,7 @@
     HistoryCell *cell = [tableView dequeueReusableCellWithIdentifier:IDENTIFIER forIndexPath:indexPath];
 
     
-   cell.data = historyData[indexPath.row];
+    cell.data = historyData[indexPath.row];
     
     return cell;
 }
